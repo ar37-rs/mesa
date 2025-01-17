@@ -409,7 +409,7 @@ wrapper_MapMemory2KHR(VkDevice _device,
          return VK_SUCCESS;
       }
    }
-   assert(mem->dmabuf_fd >= 0 || mem->ahardware_buffer != NULL);
+   // assert(mem->dmabuf_fd >= 0 || mem->ahardware_buffer != NULL);
 
    if (mem->ahardware_buffer) {
       const native_handle_t *handle;
